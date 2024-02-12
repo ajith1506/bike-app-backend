@@ -90,7 +90,7 @@ const applyMechanicController = async (req, res) => {
       message: `${newMechanic.firstName} ${newMechanic.lastName} Has Applied For A Mechanic Account`,
       data: {
         mechanicId: newMechanic._id,
-        name: newMechanic.firstName + " " + newmechanic.lastName,
+        name: newMechanic.firstName + " " + newMechanic.lastName,
         onClickPath: "/admin/mechanics",
       },
     });
