@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
-  isDoctor: {
+  isMechanic: {
     type: Boolean,
     default: false,
   },

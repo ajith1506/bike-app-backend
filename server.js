@@ -9,8 +9,6 @@ const corsOptions = {
   origin: "http://localhost:3000",
 };
 
-
-
 //dotenv conig
 dotenv.config();
 
