@@ -26,7 +26,7 @@ router.post("/register", registerController);
 //Auth || POST
 router.post("/getUserData", authMiddleware, authController);
 
-router.post("/apply-mechanic", authMiddleware, applyMechanicController);
+router.post("/apply-mechanic", applyMechanicController);
 
 //Notifiaction
 router.post(
