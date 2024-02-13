@@ -7,7 +7,7 @@ const getMechanicInfoController = async (req, res) => {
     res.status(200).send({
       success: true,
       message: "mechanic data fetch success",
-      data: doctor,
+      data: mechanic,
     });
   } catch (error) {
     console.log(error);
@@ -29,7 +29,7 @@ const updateProfileController = async (req, res) => {
     res.status(201).send({
       success: true,
       message: "mechanic Profile Updated",
-      data: doctor,
+      data: mechanic,
     });
   } catch (error) {
     console.log(error);
@@ -47,7 +47,7 @@ const getmechanicByIdController = async (req, res) => {
     res.status(200).send({
       success: true,
       message: "Sigle mec Info Fetched",
-      data: doctor,
+      data: mechanic,
     });
   } catch (error) {
     console.log(error);
