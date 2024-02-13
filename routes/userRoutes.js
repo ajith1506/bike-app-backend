@@ -11,7 +11,7 @@ const {
   bookingAvailabilityController,
   userAppointmentsController,
 } = require("../controllers/userCtrl");
-const authMiddleware = require("../middlewares/authMiddlewares");
+const authMiddlewares = require("../middlewares/authMiddlewares");
 
 //router onject
 const router = express.Router();
@@ -24,9 +24,9 @@ router.post("/login", loginController);
 router.post("/register", registerController);
 
 //Auth || POST
-router.post("/getUserData", authMiddleware, authController);
+router.post("/getUserData", authMiddlewares, authController);
 
-router.post("/apply-mechanic", authMiddleware, applyMechanicController);
+router.post("/apply-mechanic", authMiddlewares, applyMechanicController);
 
 //Notifiaction
 router.post(
@@ -42,19 +42,19 @@ router.post(
 );
 
 //GET ALL
-router.get("/getAllMechanics", authMiddleware, getAllMechanicsController);
+router.get("/getAllMechanics", authMiddlewares, getAllMechanicsController);
 
 //BOOK APPOINTMENT
-router.post("/book-appointment", authMiddleware, bookeAppointmnetController);
+router.post("/book-appointment", authMiddlewares, bookeAppointmnetController);
 
 //Booking Avliability
 router.post(
   "/booking-availbility",
-  authMiddleware,
+  authMiddlewares,
   bookingAvailabilityController
 );
 
 //Appointments List
-router.get("/user-appointments", authMiddleware, userAppointmentsController);
+router.get("/user-appointments", authMiddlewares, userAppointmentsController);
 
 module.exports = router;
