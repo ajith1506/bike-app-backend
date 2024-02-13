@@ -31,13 +31,13 @@ router.post("/apply-mechanic", authMiddlewares, applyMechanicController);
 //Notifiaction
 router.post(
   "/get-all-notification",
-  authMiddleware,
+  authMiddlewares,
   getAllNotificationController
 );
 //Notifiaction  || POST
 router.post(
   "/delete-all-notification",
-  authMiddleware,
+  authMiddlewares,
   deleteAllNotificationController
 );
 
