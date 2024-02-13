@@ -7,9 +7,11 @@ const mechanicSchema = new mongoose.Schema(
     },
     firstName: {
       type: String,
+      required: [true, "first name is required"],
     },
     lastName: {
       type: String,
+      required: [true, "first name is required"],
     },
     phone: {
       type: String,
