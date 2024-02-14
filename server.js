@@ -5,10 +5,6 @@ const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const cors = require("cors");
 
-const corsOptions = {
-  origin: "http://localhost:3000",
-};
-
 //dotenv conig
 dotenv.config();
 
@@ -21,7 +17,7 @@ const app = express();
 //middlewares
 app.use(express.json());
 app.use(moragan("dev"));
-app.use(cors(corsOptions));
+app.use(cors());
 //routes
 app.use("/api/v1/user", require("./routes/userRoutes"));
 app.use("/api/v1/admin", require("./routes/adminRoutes"));
