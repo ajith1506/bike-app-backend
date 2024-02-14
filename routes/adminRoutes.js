@@ -12,7 +12,7 @@ const router = express.Router();
 router.get("/getAllUsers", authMiddleware, getAllUsersController);
 
 //GET METHOD || DOCTORS
-router.get("/getAllDoctors", authMiddleware, getAllMichanicController);
+router.get("/getAllMechanics", authMiddleware, getAllMichanicController);
 
 //POST ACCOUNT STATUS
 router.post(
