@@ -55,7 +55,7 @@ const changeAccountStatusController = async (req, res) => {
     res.status(201).send({
       success: true,
       message: "Account Status Updated",
-      data: doctor,
+      data: mechanic,
     });
   } catch (error) {
     console.log(error);
