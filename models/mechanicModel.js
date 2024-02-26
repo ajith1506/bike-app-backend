@@ -19,21 +19,6 @@ const mechanicSchema = new mongoose.Schema(
     email: {
       type: String,
     },
-    website: {
-      type: String,
-    },
-    address: {
-      type: String,
-    },
-    specialization: {
-      type: String,
-    },
-    experience: {
-      type: String,
-    },
-    feesPerCunsaltation: {
-      type: Number,
-    },
     status: {
       type: String,
       default: "pending",
