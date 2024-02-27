@@ -4,15 +4,19 @@ const appointmentSchema = new mongoose.Schema(
   {
     userId: {
       type: String,
+      required: true,
     },
     mechanicId: {
       type: String,
+      required: true,
     },
     mechanicInfo: {
       type: String,
+      required: true,
     },
     userInfo: {
       type: String,
+      required: true,
     },
     date: {
       type: String,
